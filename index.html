@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <input type="radio" name="tabs" id="tab-1" checked>
+    <input type="radio" name="tabs" id="tab-2">
+    <input type="radio" name="tabs" id="tab-3">
+    <header class="container">
+        <label for="tab-1">окно прогноза погоды</label>
+        <label for="tab-2">мониторинг погодных условий с помощью карты</label>
+        <label for="tab-3">силы и средства</label>
+    </header>
+    <main>
+        <div class="container">
+            <div class="two-sided">
+                <div class="left-side">
+                    <h1>Прогноз погоды</h1>
+                    <p class="timer"><span class="date"></span><span class="clock"></span></p>
+                    <table>
+                        <tr>
+                            <td>Город</td>
+                            <td colspan="4">
+                                <select name="" id="">
+                                    <option value=""></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>источник прогноза</th>
+                            <th>Ventuski</th>
+                            <th>Gismetio</th>
+                            <th>Яндекс</th>
+                            <th>Windy</th>
+                        </tr>
+                        <tr>
+                            <td>Количество осадков:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Влажность:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Давление:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Температура:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Ветер:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Описание</td>
+                            <td colspan="4">
+                                узнать
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Уровень угрозы на сегодня:</td>
+                            <td colspan="4">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Режим функционирования РСЧС:</td>
+                            <td colspan="4">
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right-side">
+                    <h1>Прогнозирование</h1>
+                    <table>
+                        <tr>
+                            <td colspan="6">
+                                <select name="" id="">
+                                    <option value=""></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>источник прогноза</th>
+                            <th>Ventuski</th>
+                            <th>Gismetio</th>
+                            <th>Яндекс</th>
+                            <th>Windy</th>
+                        </tr>
+                        <tr>
+                            <td>Количество осадков:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Влажность:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Давление:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Температура:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Ветер:</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Описание</td>
+                            <td colspan="4">
+                                узнать
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Уровень угрозы на сегодня:</td>
+                            <td colspan="4">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Режим функционирования РСЧС:</td>
+                            <td colspan="4">
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="range">
+                <input class="timer-range" type="range" min="0" max="24" step="1">
+            </div>
+        </div>
+        <div class="container tab-2">
+            <select name="" id="">
+                <option value=""></option>
+            </select>
+            <div class="map-wrapper">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4d1a0d2532a48e02e53f3cfaccef6920578024cb833178667ccbf49471b43e9a&amp;source=constructor" frameborder="0"></iframe>
+            </div>
+            <div class="range">
+                <input class="timer-range" type="range" min="0" max="24" step="1">
+            </div>
+        </div>
+        <div class="container">
+            <h1>Прогноз погоды</h1>
+            <img src="https://cs6.pikabu.ru/post_img/2015/06/06/9/1433605074_68527415.jpg" alt="">
+            <img src="cat.jpg" alt="">
+        </div>
+    </main>
+</body>
+</html>
